@@ -6,37 +6,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ask Allison</title>
-
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/meo4syx.css">
-
-
-
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
 
 
 </head>
 
-<body>
-    <div class="container font">
-        <div class="row">
-            <div class="col">
-                <div class="font">Ask Alison for Your Fortune?</div>
-                <p class="btn btn-primary btn-lg" onclick="start()">Click Here To Connect
-                    to the Other Side</p>
-                <p>Now, Pick a Number 1 thru 9</p>
-                <input id="userguess" onkeyup="number()"></input>
-                <p id="false"></p>
-                <p id="prediction"></p>
-                <input type="button" value="Start Again" onClick="document.location.reload(true)">
-
-            </div>
+<body onload="start();" class="bg-img">
+    <div class="container">
+        <img src="assets/allison.jpg" class="allison">
+        <div id="countdown">3</div>
+        <div>
+            <input class="inputbox" id="userguess" onkeyup="number()"></input>
         </div>
+        <div id="prediction">The Other Side is Waiting</div>
+        <div id="tryagain"></div>
     </div>
-    <script src="psychic.js"></script>
+    <script src="psychic_v2.js"></script>
 </body>
 
 </html>
