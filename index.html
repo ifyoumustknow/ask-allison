@@ -16,13 +16,17 @@
 
 <body onload="start();" class="bg-img">
     <div class="container">
-        <img src="assets/allison.jpg" class="allison">
-        <div id="countdown">3</div>
-        <div>
-            <input class="inputbox" id="userguess" onkeyup="number()"></input>
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="assets/allison.jpg" class="allison">
+                <div id="countdown">3</div>
+                <div>
+                    <input class="inputbox" id="userguess" onkeyup="number()"></input>
+                </div>
+                <div id="prediction">The Other Side is Waiting</div>
+                <div id="tryagain"></div>
+            </div>
         </div>
-        <div id="prediction">The Other Side is Waiting</div>
-        <div id="tryagain"></div>
     </div>
     <script src="psychic_v2.js"></script>
 </body>
