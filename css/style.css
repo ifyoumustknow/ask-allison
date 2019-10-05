@@ -21,24 +21,9 @@ body{
 
 }
 
-#prediction {
-    color: purple;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: zebrawood-std-fill, sans-serif;
-    text-align: center;
-    font-weight: 400;
-    font-style: normal;
-    font-size:3.5vmin;
-    width: 18vmin;
-    line-height:3.5vmin;
-    
-}
  .allison{
     margin-top:30px;
-    width: 95%;
+    width: 100%;
  }
 
 
@@ -70,6 +55,21 @@ body{
 
   }
   
+  #prediction {
+    color: purple;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: zebrawood-std-fill, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size:3.5vmin;
+    width: 18vmin;
+    line-height:3.5vmin;
+    
+}
   
   #countdown {
     position: absolute;
