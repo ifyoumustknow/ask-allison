@@ -119,5 +119,62 @@ font-style: normal;
 
 */
 
-
+@media screen and (max-width: 768px) {
   
+  .inputbox {
+    position: absolute;
+    width: 50px;
+    color: red;
+    top: 79%;
+    right:12.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    background-color: black;
+    padding:10px;
+    font-size:7vmin;
+    font-family: zebrawood-std-fill, sans-serif;
+
+  }
+  
+  
+  #countdown {
+    position: absolute;
+    font-family: zebrawood-std-fill, sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-size:8vmin;
+    left: 28%;
+    top: 79%;
+    transform: translate(-50%, -50%);
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 100%;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    background-color: black;
+    padding:0px 1px 10px 2px;
+  }
+
+  #prediction {
+    color: purple;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: zebrawood-std-fill, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size:3.5vmin;
+    width: 18vmin;
+    line-height:3.5vmin;
+    
+}
