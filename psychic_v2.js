@@ -12,7 +12,8 @@ function number() {
 
 
     if (parseFloat(inputGuess) === allisonguess) {
-        var prediction = ["Fortune", "Love", "Danger", "Loss", "Happiness", "Success", "Pain", "Travel", "Fame"];
+        var prediction = ["Fortune", "Love", "Danger", "Loss", "Happiness", "Success", "Pain", "Travel", "Fame", "Money", "Joy",
+            "Sadness", "More Java Script", "Luck"];
         var predictionVal = prediction[Math.floor(Math.random() * prediction.length)];
         document.getElementById('prediction').innerHTML = predictionVal;
         userguess.value = "";
