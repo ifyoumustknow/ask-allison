@@ -15,19 +15,24 @@ function number() {
         var prediction = ["Fortune", "Love", "Danger", "Loss", "Happiness", "Success", "Pain", "Travel", "Fame", "Money", "Joy",
             "Sadness", "More Java Script", "Luck"];
         var predictionVal = prediction[Math.floor(Math.random() * prediction.length)];
+        document.getElementById('title').innerHTML = "";
         document.getElementById('prediction').innerHTML = predictionVal;
+        document.getElementById('tryagain').innerHTML = "";
         userguess.value = "";
         resetVariables()
         showGuessesRemaining()
         start()
 
     } else if (guessesLeft === 0) {
+        title.value = "";
         userguess.value = "";
         location.reload(true);
 
 
     } else {
-        document.getElementById("prediction").innerHTML = "Try Again!";
+        document.getElementById('tryagain').innerHTML = "Try Again!";
+        document.getElementById('title').innerHTML = "";
+        document.getElementById('prediction').innerHTML = "";
         guessesLeft = guessesLeft - 1
         showGuessesRemaining()
         userguess.value = "";
