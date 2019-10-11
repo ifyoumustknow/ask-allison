@@ -1,6 +1,7 @@
 var allisonguess;
 var guessesLeft = 3;
 
+
 function start() {
     allisonguess = Math.floor((Math.random() * 9) + 1);
     console.log("random", allisonguess);
@@ -8,7 +9,7 @@ function start() {
 }
 
 function number() {
-    var inputGuess = document.getElementById('userguess').value;
+    var inputGuess = document.querySelector("#userguess").value;
 
 
     if (parseFloat(inputGuess) === allisonguess) {
@@ -23,7 +24,7 @@ function number() {
         showGuessesRemaining()
         start()
 
-    } else if (guessesLeft === 0) {
+    } else if (guessesLeft === 1) {
         title.value = "";
         userguess.value = "";
         location.reload(true);
@@ -34,7 +35,7 @@ function number() {
         document.getElementById('title').innerHTML = "";
         document.getElementById('prediction').innerHTML = "";
         guessesLeft = guessesLeft - 1
-        showGuessesRemaining()
+        showGuessesRemaining();
         userguess.value = "";
 
     }
@@ -47,6 +48,7 @@ function showGuessesRemaining() {
 function resetVariables() {
     guessesLeft = 3;
 }
+
 
 
 
